@@ -68,6 +68,25 @@ describe("Recipes", function(){
       });
   });
 
+  it('should return a 400 and error if ids do not match', function(){
+    const updateRecipe = {
+      name: 'updated recipe name',
+      ingredients: ['updated', 'recipe', 'ingredients']
+    };
+    return chai.request(app)
+      .get('/recipes')
+      .then(function(res){
+        updateRecipe.id = res.body[0].id;
+        return chai.request(app)
+          .put('/recipes/not_an_id')
+          .send(updateRecipe)
+      })
+      .then(function(res){
+        expect(res).to.have.status(400);
+        expect(res.text).to.equal(`Request path id not_an_id and request body id ${updateRecipe.id} must match`);
+      });
+  });
+
   it("should delete an item on DELETE", function(){
     return chai.request(app)
       .get('/recipes')
