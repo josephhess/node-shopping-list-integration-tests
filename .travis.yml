@@ -4,6 +4,6 @@ deploy:
   provider: heroku
   api_key:
     secure: LtRLD6aU3d/YnUJtJWt9ABDUlcQsa9KxBWBEZYaZO5MEfQ0ITvLWc9Nvfxj0smsL8el3BPLKu0VAFFHaB0QMitkc097DnMKwvHsk019nfbXUEw+mphqQtML/66DVa/SKURvuvxMX7pciP7lNgsOPiPQZwI6wvQpLIrng6cWZBxbcNUKU350AlnNyaf/BJHKCL+ZVdJzhV9MZJCTXSUNV4f1YAZ33xxh8xncuJOADf3kMXOu/kGpmua6pz/ClKcktVqO71J42BuZ20ZqZmrEj0yg0ADCWAV3PkcC23Du+rMVtTlPfRSBZmeTA4RrjFb7CH0HvfcwcPo15HLIEqKjXqdUMABMmI+l4k477j5CxyqxQoQ9S3KN7/N+qSK6EK5Yzz0dEAGY4F04A+wFDgc4B9loSeYN8yjGDSnT6rhBVLUSgyjKXnYFHaQDCmwZ6T9e5oimncSJiYw6D5b4UqKMVoLY+V2JRqlNS7UZylJd+ZrFypiPNnntA8f9iHW5i39+cAHF1mExwLlccKlrNBuO14Beqg4M8zNugxHLsLQJvIixVkeZXQIWqYHK/hk8twLxEOZ3oCMvAog8UgUXSewhQhToWXVzFpHVR8EB56vOm4jd5QV2A5wvvZef6x0vkIwQJRwCtPAXW6HBI4wa5v9womL2CeQC67yyYfcmb2wEra64=
-  app: https://ancient-inlet-42741.herokuapp.com/
+  app: ancient-inlet-42741
   on:
     repo: josephhess/node-shopping-list-integration-tests
